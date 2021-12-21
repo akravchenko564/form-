@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Form</title>
+</head>
+<body>
+    <main class="main">
+        <section class="main__inner">
+          <div class="main__title">
+            <h1>Калькулятор</h1>
+          </div>
+          <div class="main__inputs">
+            <input class="typeClick input1" id="input1" type="number"  placeholder="Введите число" />
+  
+            <select class="select typeClick" id="select">
+              <option selected="selected" disabled="disabled">Выберите операцию</option>
+              <option class="optionsSelect" value="+">+</option>
+              <option class="optionsSelect" value="-">-</option>
+              <option class="optionsSelect" value="*">*</option>
+              <option class="optionsSelect" value="/">/</option>
+            </select>
+
+            <input class="typeClick input2" id="input2" type="number" placeholder="Введите число" />
+            <button class="typeClick" onclick="op();">Получить результат</button>
+            <input class="typeClick" type="text" id="result"/>
+           
+          </div>
+        </section>
+      </main>
+      <script src="js/calculating.js"></script>
+</body>
+</html>
